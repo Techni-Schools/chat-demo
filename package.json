@@ -1,0 +1,23 @@
+{
+  "name": "group-chat",
+  "version": "1.0.0",
+  "description": "chat application",
+  "main": "app.js",
+  "scripts": {
+    "watch": "nodemon --ignore public/ node ./app.js",
+    "start": "node ./app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "chat",
+    "websockets"
+  ],
+  "author": "MT",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.3",
+    "express-session": "^1.17.2",
+    "lodash": "^4.17.21",
+    "ws": "^8.5.0"
+  }
+}

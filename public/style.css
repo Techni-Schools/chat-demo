@@ -1,0 +1,83 @@
+.form-register input.btn[type=submit] {
+  height: calc(3.5rem + 2px);
+}
+
+.user-list {
+  width: 50%;
+  margin: 0 auto;
+  max-height: 400px;
+  overflow: auto;
+}
+
+.user-list li {
+  display: flex;
+  align-items: center;
+}
+.user-list li .label {
+  width: 100%;
+}
+
+.user-list li button {
+  border-radius: 1.25em;
+  border: 1px solid #aaa;
+  height: 2.5em;
+  width: 2.5em;
+  background-color: #eee;
+}
+
+.chats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.chat-window .card-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.chat-title {
+  align-self: center;
+  font-weight: bold;
+}
+
+.chat-messages {
+  height: 450px;
+  border: 1px solid #eee;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.chat-messages .msg {
+  max-width: 60%;
+  padding: 0.4em;
+  border-radius: 5px;
+  margin: 2px 0;
+}
+
+.msg.msg-sent {
+  align-self: flex-end;
+  background-color: #359ff4;
+  color: #fff;
+}
+
+.msg.msg-received {
+  align-self: flex-start;
+  background-color: #ddd;
+  color: #000;
+}
+
+.msg.msg-system {
+  align-self: center;
+  color: #999;
+  background-color: #e8e8ad;
+  padding: 0.1em 3em;
+  max-width: 100%
+}
+
+.chat-controls {
+  display: flex;
+}
