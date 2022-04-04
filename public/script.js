@@ -66,7 +66,7 @@ class Chat {
   }
 
   openWebSocket() {
-    this.ws = new WebSocket(`ws://${window.location.host}/chat`)
+    this.ws = new WebSocket(`ws${window.location.protocol == 'https:' ? 's' : ''}://${window.location.host}/chat`)
 
     this.ws.onopen = () => {
       console.log('ws opened');
