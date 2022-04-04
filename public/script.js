@@ -54,7 +54,7 @@ class Chat {
   }
 
   initiateChatWith(user) {
-    return fetch('http://localhost:3000/user/chat-with', {
+    return fetch('/user/chat-with', {
       method: 'POST', headers: {
         'Content-Type': 'application/json'
       }, body: JSON.stringify({user})
@@ -66,7 +66,7 @@ class Chat {
   }
 
   openWebSocket() {
-    this.ws = new WebSocket('ws://localhost:3000/chat')
+    this.ws = new WebSocket('/chat')
 
     this.ws.onopen = () => {
       console.log('ws opened');
